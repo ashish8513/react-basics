@@ -1,0 +1,58 @@
+.card {
+    width: 100%;
+    max-width: 400px; /* Limits the card width on larger screens */
+    border: 2px solid #333; /* Darker border color */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px auto; /* Center the card horizontally with margin */
+    background-color: #fff; /* White background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Hide overflow content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card-image {
+    width: 100%; /* Full width image */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #ddd; /* Add border below image */
+}
+
+.card-content {
+    padding: 20px; /* Add padding around text content */
+}
+
+.card-img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #ddd; /* Light border below the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px 10px 0 0; /* Rounded corners on the top only */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Responsive font size for title */
+    margin-bottom: 10px; /* Margin below title */
+}
+
+.card-description {
+    font-size: 1rem; /* Font size for description */
+    color: #666; /* Slightly lighter color for description */
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+    }
+
+    .card-description {
+        font-size: 0.875rem; /* Adjust font size for smaller screens */
+    }
+}

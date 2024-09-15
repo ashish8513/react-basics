@@ -1,0 +1,91 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark text color */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #f5f5dc; /* Softer beige color */
+  padding: 20px 30px; /* Responsive padding */
+  display: flex; /* Ensures flexbox layout for nav */
+  justify-content: center; /* Center nav content horizontally */
+  align-items: center; /* Center nav content vertically */
+  border-bottom: 1px solid #ddd; /* Adds a border at the bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* List styles for navigation items */
+ul {
+  display: flex;
+  gap: 20px; /* Reduced gap for better spacing on smaller screens */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  list-style: none;
+}
+
+/* Responsive design for navigation */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column; /* Stack nav items vertically on smaller screens */
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  ul {
+      flex-direction: column; /* Stack list items vertically */
+      gap: 15px; /* Adjust gap for smaller screens */
+  }
+}
+
+/* Card component styling */
+.card {
+  width: 100%;
+  max-width: 400px; /* Limits the width on larger screens */
+  border: 2px solid #333; /* Darker border color */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px auto; /* Centering the card horizontally with some margin */
+  height: auto; /* Adjust height based on content */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* White background color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Footer styling */
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #333; /* Darker background color for contrast */
+  color: #fff; /* White text color */
+  padding: 15px; /* Padding for spacing */
+  font-size: 14px; /* Font size for readability */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  border-top: 1px solid #444; /* Adds a top border for separation */
+  position: fixed;
+  bottom: 0;
+  z-index: 1000; /* Ensures the footer stays on top of other content */
+}
+
+/* Ensure all elements are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}

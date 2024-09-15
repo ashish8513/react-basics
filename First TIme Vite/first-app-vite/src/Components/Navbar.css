@@ -1,0 +1,32 @@
+nav {
+    background-color: #f5f5dc; /* Softer beige color */
+    padding: 20px 30px; /* Responsive padding */
+    display: flex; /* Ensures flexbox layout for nav */
+    justify-content: center; /* Center nav content horizontally */
+    align-items: center; /* Center nav content vertically */
+    border-bottom: 1px solid #ddd; /* Adds a border at the bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+ul {
+    display: flex;
+    gap: 20px; /* Reduced gap for better spacing on smaller screens */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    ul {
+        flex-direction: column; /* Stack list items vertically */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+}
